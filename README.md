@@ -9,9 +9,9 @@ This project explores JavaScript modules and web storage. It consists of three t
 **Description:**
 In this task, the SimpleLightbox library is integrated into the project using npm. The project is structured into smaller subtasks as follows:
 
-- **Library Integration**: The SimpleLightbox library is added as a project dependency using npm, eliminating the need for a CDN link from a previous homework.
+- **Library Integration**: The SimpleLightbox library is added as a project dependency using npm, eliminating the need for a CDN link from a previous project.
 
-- **JavaScript Refactoring**: The JavaScript code from a previous homework assignment is refactored to consider that the library has been installed via npm. This involves using the import/export syntax for module usage.
+- **JavaScript Refactoring**: The JavaScript code from a previous project assignment is refactored to consider that the library has been installed via npm. This involves using the import/export syntax for module usage.
 
 - **CSS Styling**: To incorporate the library's CSS styles into the project, an additional import is required, in addition to the one mentioned in the documentation.
 
