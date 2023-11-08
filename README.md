@@ -48,3 +48,33 @@ This task involves a contact form in HTML. The script saves field values in loca
 - **Throttle Function**: To limit local storage updates to no more than once every 500 milliseconds, the project incorporates the lodash.throttle library.
 
 By exploring this project, you can gain insights into the use of JavaScript modules, web storage, and how to integrate libraries via npm. Additionally, you'll understand how to enhance user experiences by saving and restoring data efficiently.
+
+
+# Usage
+
+To use this project, follow these steps:
+
+1. **Clone the Repository:** First, clone this repository on your computer using the following command:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+
+2. **Install Dependencies:** Navigate to the project's root folder and install the required dependencies using the command:
+stall Dependencies: Navigate to the project's root folder and install the required dependencies using the command:
+
+   ```bash
+    npm install
+
+4. **Build the Project:** Execute the project build to prepare the resources:
+
+   ```bash
+    npm run build
+
+6. **Run the Project:** You can now start the project using the command:
+
+   ```bash
+    npm start
+
+## GitHub Actions:
+
+This project utilizes GitHub Actions for automatic deployment to GitHub Pages with each push to the main branch. GitHub Actions settings can be found in the `.github/workflows/deploy.yml` file. This process automatically updates your deployed application on GitHub Pages link.
