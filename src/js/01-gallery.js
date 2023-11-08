@@ -37,6 +37,6 @@ const gallery = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
-  animationSpeed: 100,
-  fadeSpeed: 150,
+  animationSpeed: 200,
+  fadeSpeed: 300,
 });
