@@ -75,6 +75,6 @@ stall Dependencies: Navigate to the project's root folder and install the requir
    ```bash
     npm start
 
-## GitHub Actions:
+## GitHub Actions
 
 This project utilizes GitHub Actions for automatic deployment to GitHub Pages with each push to the main branch. GitHub Actions settings can be found in the `.github/workflows/deploy.yml` file. This process automatically updates your deployed application on GitHub Pages link.
