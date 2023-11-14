@@ -17,30 +17,18 @@ const localStorageKey = 'videoplayer-current-time';
 const onTimeUpdate = function (data) {
   // Save the current time to local storage
   localStorage.setItem(localStorageKey, data.seconds);
-  //   console.log('Current time saved to localStorage:', data.seconds);
+  console.log('Current time saved to localStorage:', data.seconds);
 };
 
 // Add a throttled listener for the timeupdate event, limiting onTimeUpdate calls to every 1000 milliseconds.
 player.on('timeupdate', throttle(onTimeUpdate, 1000));
 
-// ---------------------------------------- TESTS ----------------------------------------
-
-// // Set an event handler for the 'play' event
-// player.on('play', function () {
-//   console.log('Video started playing.');
-// });
-
-// // Call the getVideoTitle method after initializing the player
-// player.getVideoTitle().then(function (title) {
-//   console.log('title:', title);
-// });
-
-// // Definition of a callback function for the timeupdate event
-// const onTimeUpdate = function (data) {
-//   // data - is an object containing information about the current playback time
-//   console.log('Current time:', data.seconds, 'of', data.duration, 'seconds');
-//   console.log('Percentage played:', data.percent * 100, '%');
-// };
-
-// // Set the listener of the 'timeupdate' event and specify the callback function onTimeUpdate
-// player.on('timeupdate', onTimeUpdate);
+// Set the current time using the saved value from localStorage
+player
+  .setCurrentTime(JSON.parse(localStorage.getItem(localStorageKey)) || 0)
+  .then(function (seconds) {
+    console.log('Video resumed from saved time:', seconds);
+  })
+  .catch(function (error) {
+    console.error('Error setting current time:', error);
+  });
