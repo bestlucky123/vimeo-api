@@ -1,22 +1,18 @@
 {
-  "name": "goit-js-hw-08",
+  "name": "vimeo-api",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://valik3201.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Valik3201/goit-js-hw-08.git"
+    "url": "git+https://github.com/bestlucky123/vimeo-api.git"
   },
   "keywords": [],
-  "author": "Valentyn Chernetskyi <valik3201@gmail.com>",
+  "author": "bestlucky123 <projonurs1216@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Valik3201/goit-js-hw-08/issues"
-  },
   "dependencies": {
     "@vimeo/player": "^2.20.1",
     "lodash": "^4.17.21",
